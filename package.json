@@ -1,0 +1,19 @@
+{
+  "name": "daily-distances-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "all": "npm run build && npm run deploy",
+    "start": "parcel index.html --no-cache --no-hmr --open",
+    "build": "parcel build index.html --no-cache",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}

@@ -1,0 +1,239 @@
+html,
+body {
+  margin: 0;
+}
+
+svg.svg-inline--fa {
+  height: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.info {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 10px;
+
+  border-left: solid 2px blue;
+}
+
+.info a {
+  color: black;
+}
+
+.info a:hover {
+  color: blue;
+}
+
+#chart_div {
+  width: 100%;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.links a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.links a:first-child {
+  margin-right: 20px;
+}
+
+.links a:hover {
+  color: blue;
+}
+
+h1 {
+  /* font-family: "Roboto", sans-serif; */
+  /* font-style: italic; */
+  /* margin: 0; */
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+tr,
+td {
+  /* border: solid 1px black; */
+}
+
+td {
+  padding: 10px;
+}
+
+tr:first-child td {
+  padding-top: 0;
+}
+
+tr:last-child td {
+  padding-bottom: 0;
+}
+
+td:first-child {
+  padding-left: 0;
+}
+
+td:last-child {
+  padding-right: 0;
+}
+
+.input-slider {
+  display: flex;
+  align-items: center;
+}
+
+.input-slider .input-slider-value {
+  margin-left: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-number-button {
+  background-color: blue;
+  border: none;
+  border-radius: 100%;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+
+input[type="range"].slider {
+  -webkit-appearance: none;
+  min-width: 200px;
+  max-width: 400px;
+  margin: 9.95px 0;
+}
+input[type="range"].slider:focus {
+  outline: none;
+}
+input[type="range"].slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.1px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #0000ff;
+  border-radius: 25px;
+  border: 0px solid #0000ff;
+}
+input[type="range"].slider::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 4px solid #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 26px;
+  background: rgba(0, 0, 255, 0.93);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.95px;
+}
+input[type="range"].slider:focus::-webkit-slider-runnable-track {
+  background: #6666ff;
+}
+input[type="range"].slider::-moz-range-track {
+  width: 100%;
+  height: 4.1px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #0000ff;
+  border-radius: 25px;
+  border: 0px solid #0000ff;
+}
+input[type="range"].slider::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 4px solid #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 26px;
+  background: rgba(0, 0, 255, 0.93);
+  cursor: pointer;
+}
+input[type="range"].slider::-ms-track {
+  width: 100%;
+  height: 4.1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"].slider::-ms-fill-lower {
+  background: #000099;
+  border: 0px solid #0000ff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type="range"].slider::-ms-fill-upper {
+  background: #0000ff;
+  border: 0px solid #0000ff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type="range"].slider::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 4px solid #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 26px;
+  background: rgba(0, 0, 255, 0.93);
+  cursor: pointer;
+  height: 4.1px;
+}
+input[type="range"].slider:focus::-ms-fill-lower {
+  background: #0000ff;
+}
+input[type="range"].slider:focus::-ms-fill-upper {
+  background: #6666ff;
+}
