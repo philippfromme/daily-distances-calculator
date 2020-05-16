@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "all": "npm run build && npm run deploy",
-    "start": "parcel index.html --no-cache --no-hmr --open",
-    "build": "parcel build index.html --no-cache",
+    "start": "parcel src/index.html --no-cache --no-hmr --open",
+    "build": "parcel build src/index.html --no-cache --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {},
@@ -15,5 +15,12 @@
     "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.6.1"
   },
+  "browserslist": [
+    "last 1 Chrome version",
+    "Firefox ESR",
+    "last 1 safari version",
+    "last 1 opera version",
+    "last 1 edge version"
+  ],
   "keywords": []
 }
